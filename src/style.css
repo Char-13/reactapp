@@ -1,0 +1,131 @@
+.header {
+  background-color: black;
+  color: white;
+  display: flex;
+}
+
+.header h1 {
+  font-size: 1vw;
+  margin: 0.5em;
+  margin-right: 15%;
+  margin-left: 10%;
+}
+
+.header button {
+  font-size: 1vw;
+  margin: 0.5em;
+  margin-right: 15%;
+  margin-left: 10%;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 15px;
+}
+
+.header button:hover {
+  background-color: white;
+  color: black;
+}
+
+.main {
+  display: flex;
+  height: 90vh;
+}
+
+.mainmenu {
+  width: 20%;
+  padding: 1vw;
+  border-right: 5px solid black;
+}
+
+.mainmenu button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 2vw;
+}
+.mainmenu button:hover {
+  background-color: white;
+  color: black;
+}
+
+.mainmenu h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.mainscreen {
+  width: 80%;
+  padding: 5px;
+}
+
+.mainscreen {
+  margin: 5px;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+th,
+td {
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: black;
+  color: white;
+}
+
+table {
+  padding: none;
+  margin: none;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  overflow: auto;
+  height: 550px;
+  border: 1px solid black;
+}
+
+.review h2 {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 2vh;
+}
+.review p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.testscreen {
+  width: 100%;
+  display: flex;
+}
+
+.search {
+  width: 50%;
+}
+
+.test {
+  width: 50%;
+}
+
+.scenarioManageSearch {
+  display: flex;
+  border: 1px solid black;
+}
+
+.inputManage {
+  margin: 10px;
+}
