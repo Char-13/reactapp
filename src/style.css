@@ -5,7 +5,7 @@
 }
 
 .header h1 {
-  
+  display: flex;
   font-size: 1vw;
   margin: 0.5em;
   margin-right: 15%;
@@ -13,6 +13,7 @@
 }
 
 .header button {
+  display: flex;
   font-size: 1vw;
   margin: 0.5em;
   margin-right: 15%;
@@ -24,6 +25,7 @@
 }
 
 .header button:hover {
+  display: flex;
   background-color: white;
   color: black;
 }
@@ -34,7 +36,7 @@
 }
 
 .mainmenu {
-  width: 20%;
+  position: relative;
   padding: 1vw;
   border-right: 5px solid black;
 }
@@ -52,6 +54,7 @@
 }
 
 .mainmenu h1 {
+  display: flex;
   width: 100%;
   text-align: center;
 }
@@ -62,10 +65,14 @@
 }
 
 .mainscreen {
+  display: flex;
   margin: 5px;
+  width: auto;
+  height: auto;
 }
 
 th {
+  display: flex;
   background-color: #4caf50;
   color: white;
 }
@@ -74,7 +81,9 @@ th,
 td {
   border-bottom: 1px solid #ddd;
    width: auto;
+   display: flex;
   position: relative;
+  
 }
 
 tr:nth-child(even) {
@@ -89,10 +98,12 @@ tr:hover {
 }
 
 table {
+  
   padding: none;
   margin: none;
    width: auto;
   position: relative;
+  
 }
 
 .review {
@@ -110,12 +121,16 @@ table {
 .review h2 {
   margin: 0px;
   padding: 0px;
+  width: auto;
+  height: auto;
 }
 .review p {
   margin: 0px;
   padding: 0px;
    width: auto;
   position: relative;
+  width: auto;
+  height: auto;
 }
 
 .testscreen {
@@ -129,17 +144,23 @@ table {
 
 .test {
   width: 50%;
+  width: auto;
+  height: auto;
 }
 
 .scenarioManageSearch {
   display: flex;
   border: 1px solid black;
+  width: auto;
+  height: auto;
 }
 
 .inputManage {
   margin: 10px;
   width: auto;
   position: relative;
+  width: auto;
+  height: auto;
 }
 
 @font-face{
@@ -147,6 +168,8 @@ table {
     src: url(fonts/DMMono-Light.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
+    width: auto;
+  height: auto;
     
 }
 
@@ -156,6 +179,8 @@ table {
     src: url(fonts/Play-Bold.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
+    width: auto;
+  height: auto;
     
 }
     
@@ -165,11 +190,16 @@ table {
     src: url(fonts/Monoton-Regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
+    width: auto;
+  height: auto;
 }
 
 
 body {
 
+        width: auto;
+  height: auto;
+  
 }
 
 .top-img {
@@ -181,6 +211,8 @@ body {
   min-width:  1700px;
   background-position: left;
   position: relative;
+  width: auto;
+  height: auto;
 }
 
 
@@ -191,10 +223,13 @@ body {
   color: #f2f2f2;
   text-align: left;
   min-width:  1700px;
+  width: auto;
+  height: auto;
+  
 }
 
 .navv {
-    
+  
   overflow: hidden;
   background-color: #333;
 
@@ -207,37 +242,55 @@ body {
   padding: 20px 50px;
   text-decoration: none;
   font-size: 20px;
+  width: auto;
+  height: auto;
 
 }
 
 .navv a:hover {
   background-color: #ddd;
   color: black;
+  width: auto;
+  height: auto;
 }
 
 
 body, h1,h3, h4 {
+
   font-family: Play;   
+  width: auto;
+  height: auto;
+  
 }
 
 h2 {
     
- font-family: Play;   
+ font-family: Play;  
+ width: auto;
+  height: auto; 
 }
 
 h5, h6 {
     font-family: DMMono;
+    width: auto;
+  height: auto;
 }
 p{
     font-family: DMMono;
 
     font-size: 55px;
+    width: auto;
+    height: auto;
+    
 }
 
 section {
+
   border: 1px solid gray;
   width: 100%;
   float: left;
+  width: auto;
+  height: auto;
 }
 
 
@@ -246,11 +299,15 @@ section {
   width: 300px;
   height: 200px;
   overflow: hidden;
+  width: auto;
+  height: auto;
 }
 
 .lfloat img{
   width: 100%;
   height: 100%;
+  width: auto;
+  height: auto;
 }
 
 .rfloat {
@@ -259,18 +316,26 @@ section {
   width: 100px;
   height: 200px;
   overflow: hidden;
+  width: auto;
+  height: auto;
 }
 
 .rfloat img{
     width: 100%;
     height: 100%;
+    width: auto;
+  height: auto;
     
 }
 
 
 * {
+ 
   float: center;
   box-sizing: border-box;
+  width: auto;
+  position: relative;
+  
 }
 
 input[type=text], select, textarea {
@@ -278,6 +343,8 @@ input[type=text], select, textarea {
   padding: 12px;
   border: 1px solid #ccc;
   margin-top: 25px;
+  width: auto;
+  height: auto;
 }
 
 input[type=submit] {
@@ -286,14 +353,20 @@ input[type=submit] {
   padding: 15px 25px;
   border: none;
   cursor: pointer;
+  width: auto;
+  height: auto;
 }
 
 .column {
   content: "";
-   background-position: left;
+  background-position: left;
   position: relative;
+  width: auto;
+  height: auto;
 }
 .row {
-  width: auto;
+  background-position: left;
   position: relative;
+  width: auto;
+  height: auto;
 }
