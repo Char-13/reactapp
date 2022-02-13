@@ -15,7 +15,9 @@ import AthleteROM from './components/hoprs/athleteROM';
 import AthleteSpecialTests from './components/hoprs/athleteSpecialTest';
 import AthleteAssessment from './components/hoprs/athleteAssessment';
 
+
 class AthleteScreen extends Component {
+    
     constructor(props) {
         super(props);
         this.state = {
@@ -117,13 +119,19 @@ class AthleteScreen extends Component {
                 // Athlete Home Screen
                 case 'athHome':
                     com =
-                        <React.Fragment>
+                    
+              
+                        
+                         <React.Fragment>
+                  
                         <button onClick={this.handleScenarioListButton} type="button" className="btn btn-danger btn-lg">Treat</button> &nbsp;&nbsp;&nbsp;
                         {/** <button onClick={this.handleTreatButton} type="button" className="btn btn-danger btn-lg">Treat</button> &nbsp;&nbsp;&nbsp; */}
                         <button onClick={this.handleSetButton} id="settingsButton" type="button" className="btn btn-secondary btn-lg">Settings</button>
                             <div>
                                 <img src="https://cdn0.iconfinder.com/data/icons/sport-people-1/512/sport_-_sportsman_-_people_-_athlete-08-512.png" className="img-fluid" alt="Athlete"></img>
+            
                             </div>
+                           
                             
                         </React.Fragment>
                     break;
@@ -310,7 +318,17 @@ class AthleteScreen extends Component {
             return com;
         }
         return (
+           
             <div className="container text-center h-auto position-relative">
+            <div class="top-img">
+                <div class="container">
+                    <div class="navv">
+                        <a href="/">Home</a>
+                        <a href="student">Student</a>
+                        <a href="admin">Admin</a> 
+                        </div>
+                        </div>
+                        </div>
                 <AthleteNavBar />
                 {renderStatus()}
             </div>);

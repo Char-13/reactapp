@@ -76,6 +76,17 @@ class Main extends Component {
 
         return (
             <div>
+                <body>		
+            <div class="top-img">
+                <div class="container">
+                    <div class="navv">
+                        <a href="/">Home</a>
+                        <a href="student">Student</a>
+                        <a href="admin">Admin</a> 
+                        </div>
+                        </div>
+                        </div>
+                        </body>
                 <Header />
                 <div className="main">
                     <div className="mainmenu">
