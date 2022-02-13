@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { useHistory } from 'react-router-dom';
 import GVSU_logo from './GVSU_logo.jpg';
-
+import './style.css';
 /*
  * Work In Progress Home Screen
  * 
@@ -37,6 +37,8 @@ const MainScreen = () => {
             borderColor: "#3399FF"
         }
     }
+    
+
 
 
     return (
@@ -44,7 +46,7 @@ const MainScreen = () => {
             <div class="top-img">
                 <div class="container">
                     <div class="navv">
-                        <a href=".">Home</a>
+                        <a href="/">Home</a>
                         <a href="student">Student</a>
                         <a href="admin">Admin</a> 
                         
