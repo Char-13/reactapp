@@ -1,0 +1,299 @@
+.header {
+  background-color: black;
+  color: white;
+  display: flex;
+}
+
+.header h1 {
+  
+  font-size: 1vw;
+  margin: 0.5em;
+  margin-right: 15%;
+  margin-left: 10%;
+}
+
+.header button {
+  font-size: 1vw;
+  margin: 0.5em;
+  margin-right: 15%;
+  margin-left: 10%;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 15px;
+}
+
+.header button:hover {
+  background-color: white;
+  color: black;
+}
+
+.main {
+  display: flex;
+  height: 90vh;
+}
+
+.mainmenu {
+  width: 20%;
+  padding: 1vw;
+  border-right: 5px solid black;
+}
+
+.mainmenu button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 2vw;
+}
+.mainmenu button:hover {
+  background-color: white;
+  color: black;
+}
+
+.mainmenu h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.mainscreen {
+  display: flex;
+  
+}
+
+.mainscreen {
+  margin: 5px;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+th,
+td {
+  border-bottom: 1px solid #ddd;
+   width: auto;
+  position: relative;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: black;
+  color: white;
+   width: auto;
+  position: relative;
+}
+
+table {
+  padding: none;
+  margin: none;
+   width: auto;
+  position: relative;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  overflow: auto;
+  height: 550px;
+  border: 1px solid black;
+   width: auto;
+  position: relative;
+}
+
+.review h2 {
+  margin: 0px;
+  padding: 0px;
+}
+.review p {
+  margin: 0px;
+  padding: 0px;
+   width: auto;
+  position: relative;
+}
+
+.testscreen {
+  width: 100%;
+  display: flex;
+}
+
+.search {
+  width: 50%;
+}
+
+.test {
+  width: 50%;
+}
+
+.scenarioManageSearch {
+  display: flex;
+  border: 1px solid black;
+}
+
+.inputManage {
+  margin: 10px;
+  width: auto;
+  position: relative;
+}
+
+@font-face{
+    font-family: DMMono;
+    src: url("DMMono-Light.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+@font-face{
+    
+    font-family: Play;
+    src: url("Play-Bold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+    
+    
+@font-face{
+    font-family: Monoton;
+    src: url("Monoton-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+
+}
+
+.top-img {
+
+  background-image: url("images/gvbanner.jpg");
+  padding: 1px;
+  min-height: 245px;
+  max-height: 360px;
+  min-width:  1700px;
+  background-position: left;
+  position: relative;
+}
+
+
+.container {
+  padding: 1px;
+  position: absolute;
+
+  color: #f2f2f2;
+  text-align: left;
+  min-width:  1700px;
+}
+
+.navv {
+    
+  overflow: hidden;
+  background-color: #333;
+
+}
+.navv a {
+   
+  float: left;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 20px 50px;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+
+.navv a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+body, h1,h3, h4 {
+  font-family: Play;   
+}
+
+h2 {
+    
+ font-family: Play;   
+}
+
+h5, h6 {
+    font-family: DMMono;
+}
+p{
+    font-family: DMMono;
+
+    font-size: 55px;
+}
+
+section {
+  border: 1px solid gray;
+  width: 100%;
+  float: left;
+}
+
+
+.lfloat {
+  float: left;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.lfloat img{
+  width: 100%;
+  height: 100%;
+}
+
+.rfloat {
+
+  float: right;
+  width: 100px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.rfloat img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+* {
+  float: center;
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 25px;
+}
+
+input[type=submit] {
+  background-color: #04446D;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.column {
+  content: "";
+   background-position: left;
+  position: relative;
+}
+.row {
+  width: auto;
+  position: relative;
+}
