@@ -1,81 +1,90 @@
 import React, { Component } from 'react';
 import { useHistory } from 'react-router-dom';
-import GVSU_logo from './GVSU_logo.jpg';
 import './style.css';
+import GVSU_logo from './GVSU_logo.jpg';
+import Box from '@material-ui/core/Box';
+import axios from 'axios';
+import { useState } from 'react';
+import { useFormControlUnstyled } from '@mui/material';
+
 /*
  * Work In Progress Home Screen
  * 
  * Currently this page works as a home screen that leads to the admin page or student page.
  * We will replace this with a login screen that redirects users based on the login to either the admin view or student view
  **/
- 
 
-
-const MainScreen = () => {
+const MainScreen  = () =>  {
     const history = useHistory();
     const handleAdmin = () => history.push('/admin');
     const handleStudent = () => history.push('/student');
+    // const [username, setUsername] = useState("");
+    // const [password, setPassword] = useState("");
 
-    const loginText = {
-        position: 'fixed',
-        top: '-300%',
-        left: '50%',
-        transform: 'translate(-50%,-50%)',
-        textStyle: {
-            color: '#3399FF',
-            fontWeight: 'bold',
-            fontSize: 50
-        }
-    }
+    const textStyle = {
+        width: "400px",
+        height: "20px"
+    };
 
-    const buttons = {
-        position: 'fixed',
-        top: '80%',
-        transform: 'translate(0%,25%)',
-        buttonStyle: {
-            backgroundColor: "#3399FF",
-            borderColor: "#3399FF"
-        }
-    }
-    
+    // const handleSubmit = async e =>{
 
+    // };
 
+    https://www.freecodecamp.org/news/how-to-persist-a-logged-in-user-in-react/
+    //finish
 
     return (
-    <body>		
-            <div class="top-img">
-                <div class="container">
-                    <div class="navv">
-                        <a href="/">Home</a>
-                        <a href="student">Student</a>
-                        <a href="admin">Admin</a> 
-                        
-              
+        <>
+            {/* Here is where we display the top banner */}
+            <div class="rectangle"></div>
 
-             <div style={buttons}>
             {/* Here is where we display the GVSU logo in the bottom righthand corner */}
-          
-                <img alt="GVSU_logo" src={GVSU_logo} height="100" weight="100" />
-                
-        
-                     </div>
-                     
-                     
-                </div>
-                <div class="container">
-
-                <button type="button" style={buttons.buttonStyle} className="btn btn-danger btn-lg float-left m-2" onClick={handleAdmin}>Login</button>
-            <button type="button" style={buttons.buttonStyle} className="btn btn-danger btn-lg float-left m-2" onClick={handleStudent}>Logout</button>
-            
-             </div>
+            <div class="img">
+                <img src={GVSU_logo} alt="GVSU_Logo" width="244" height="72" />
             </div>
-            
-            
 
-        </div>
-            </body>
+            {/* Here is where we display the app name */}
+            <div class="header2">
+                <h1>
+                    What's Wrong with Louie?
+                </h1>
+            </div> 
+
+            {/* Username text box*/}
+            <div class="textBox">
+                <div>
+                    <input type="text" id="uName" name="uName" style={textStyle} placeholder="Username" /> <br /> <br />
+                </div>
+                <div>
+                    <input type="text" id="pWord" name="pWord" style={textStyle} placeholder="Password" /> <br /> <br />
+                </div>
+            </div>
+
+            {/* Login Button */}
+            <div class="button">
+                <button type="submit" form="loginForm" value="Login">
+                    Login
+                </button>
+            </div>
+
+            <div>
+                <div class="button">
+                    <button type="submit" form="AdminForm" value="Admin" onClick={handleAdmin}>
+                        Admin
+                    </button>
+                </div>
+
+                <div class="button">
+                    <button type="submit" form="UserForm" value="User" onClick={handleStudent}>
+                        User
+                    </button>
+                </div>
+            </div>
+
+            {/* Bottom Banner */}
+            <div class= "rectangle2"> </div>
+        </>
     )
-    
-    }
+};
 
 export default MainScreen;
